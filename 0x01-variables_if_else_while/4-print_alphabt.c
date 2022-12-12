@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - return alphabets both except e and q
+ * main - returns alphabets both except e and q
  *
  * Return: Always 0 (Success)
  */
@@ -19,6 +19,7 @@ int main(void)
 			putchar (dj);
 		}
 		dj++;
+
 	}
 	putchar('\n');
 	return (0);
