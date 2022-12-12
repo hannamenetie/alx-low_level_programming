@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - return single integerfrom 0-10
+ * main - return single integer from 0-10
  *
  * Return: Always 0 (Success)
  */
@@ -9,9 +9,9 @@
 int main(void)
 
 {
-	int i = 42;
+	int i = 48;
 
-	while (i <52)
+	while (i <58)
 	{
 		putchar(i);
 		i++;
