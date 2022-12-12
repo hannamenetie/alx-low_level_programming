@@ -5,7 +5,7 @@
 /**
  * main - prints the last digit of n and prints out whether it is
  * greater than 5, 0, or less than 6
- * Return : 0
+ * Return : Always 0 (Sucess)
  */
 int main(void)
 {
