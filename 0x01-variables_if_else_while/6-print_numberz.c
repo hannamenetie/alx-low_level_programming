@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - return single integerfrom 0-10
@@ -10,12 +9,12 @@
 int main(void)
 
 {
-	int num = '0';
+	int i = 42;
 
-	while (num <= '9');
+	while (i <52)
 	{
-		putchar(num);
-		num++;
+		putchar(i);
+		i++;
 	}
 	putchar('\n');
 
