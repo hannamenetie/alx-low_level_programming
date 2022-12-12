@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 /**
- *
- * main - This prints the alphabets
+ * main - returns alphabets
  *
  * Return: Always 0 (Success)
  */
