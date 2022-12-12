@@ -9,7 +9,7 @@
 int main(void)
 {
 	int dj = 'a';
-	int DJ = 'Z';
+	int DJ = 'A';
 
 	while (dj <= 'z')
 	{
