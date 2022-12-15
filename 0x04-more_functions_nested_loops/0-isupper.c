@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * _isdigit - input
+ * _isupper - define if a character is uppercase
  *
- * Description: define if a character is a number
+ * Description: Prints the alphabet with _putchar
  * @c: charater
- * Return: 1 yes 0 no
+ * Return: void
  */
 
-int _isdigit(int c)
+int _isupper(int c)
 {
-	if (c >= '0' && c <= '9')
+	if (c >= 'A' && c <= 'Z')
 		return (1);
 	else
 		return (0);
