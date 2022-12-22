@@ -1,35 +1,31 @@
 #include "main.h"
+
 /**
- * cap_string - capitalizes every first letter of a word in a string
- * separators of words are: space, tabulation
- * new line
- * @s: POinter to string
- *
- * Return: Pointer to s
+ * cap_string - capitalizes all words in a string
+ * @s: string
+ * Return: address of s
  */
 char *cap_string(char *s)
 {
-	int count;
+	int i = 0, j;
+	char a[] = " \t\n,;.!?\"(){}";
 
-	count = 0;
-  while (s[count] != '\0')
+	while (*(s + i))
 	{
-		if (s[0] >= 97 && s[0] <= 122)
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
-			s[0] = s[0] - 32;
-		}
-		if (s[count] == ' ' || s[count] == '\t' || s[count] == '\n'
-		    || s[count] == ',' || s[count] == ';' || s[count] == '.'
-		    || s[count] == '.' || s[count] == '!' || s[count] == '?'
-		    || s[count] == '"' || s[count] == '(' || s[count] == ')'
-		    || s[count] == '{' || s[count] == '}')
-		{
-			if (s[count + 1] >= 97 && s[count + 1] <= 122)
+			if (i == 0)
+				*(s + i) -= 'a' - 'A';
+			else
 			{
-				s[count + 1] = s[count + 1] - 32;
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
+				}
 			}
 		}
-		count++;
+		i++;
 	}
 	return (s);
 }
